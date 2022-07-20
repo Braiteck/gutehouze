@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="tpl/css/style.css">
+	<link rel="stylesheet" href="tpl/css/slick.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="tpl/js/slick.min.js"></script>
+	<script src="tpl/js/common.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script>
+	  $( function() {
+	    var handle = $( "#custom-handle" );
+	    $( "#slider" ).slider({
+	      step: 5,
+	      min: 0,
+	      max: 50,
+	      create: function() {
+	        handle.text( $( this ).slider( "value" ) );
+	      },
+	      slide: function( event, ui ) {
+	        handle.text( ui.value );
+	        $("#sl1").val(ui.value);    
+	      }
+	    });
+	    $("#sl1").val($("slider1").slider("value"));
+	  } );
+	</script>
+	<script>
+	  $( function() {
+	    var handle = $( "#custom-handle2" );
+	    $( "#slider2" ).slider({
+	      step: 5,
+	      min: 0,
+	      max: 30,
+	      create: function() {
+	        handle.text( $( this ).slider( "value" ) );
+	      },
+	      slide: function( event, ui ) {
+	        handle.text( ui.value );
+	        $("#sl2").val(ui.value);
+	      }
+	    });
+	    $("#sl2").val($("slider2").slider("value"));
+	  } );
+	</script>
+</head>
+<body>
+	<div class="menubg"></div>
+	<nav class="mobile-menu">
+		<div class="flex">
+			<div class="logo">
+				<a href="/"><img src="tpl/img/logo.png"></a>
+			</div>
+			<div class="social">
+				<a href="#"><img src="tpl/img/social1.svg"></a>
+				<a href="#"><img src="tpl/img/social2.svg"></a>
+			</div>
+			<div class="hours">
+				с 8:30 до 21:00 ежедневно
+			</div>
+			<div class="adress">
+				г. Минск, ул. Тимирязева 65а, офис 430
+			</div>
+			<div class="contacts flex">
+				<a href="tel:+375298731176">+375 (29) <span>873-11-76</span></a>
+				<a href="mailto:info@houze.by">info@houze.by</a>
+			</div>
+			<button>БЕСПЛАТНЫЙ ЗАМЕР</button>
+		</div>
+		<ul>
+			<li><a href="#">Натяжные потолки</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">Цены</a></li>
+			<li><a href="#">Рассрочка</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="#">Сервисное обслуживание</a></li>
+			<li><a href="#">Освещение</a></li>
+			<li><a href="#">Карнизы</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Гарантии</a></li>
+			<li><a href="#">Вакансии</a></li>
+			<li><a href="#">Блог</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Оплата</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Дисконтная программа</a></li>
+			<li><a href="#">FAQ</a></li>
+		</ul>
+	</nav>
+	<div class="top-page-line">
+		<div class="container flex">
+			<ul>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Гарантии</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Дисконтная программа</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			<div class="social">
+				<a href="#"><img src="tpl/img/social1.svg"></a>
+				<a href="#"><img src="tpl/img/social2.svg"></a>
+			</div>
+			<button>БЕСПЛАТНЫЙ ЗАМЕР</button>
+		</div>
+	</div>
+	<div class="index-first-block">
+		<header class="header">
+			<div class="container flex">
+				<div class="logo">
+					<a href="/"><img src="tpl/img/logo.png"></a>
+				</div>
+				<div class="hours">
+					с 8:30 до 21:00 ежедневно
+				</div>
+				<div class="adress">
+					г. Минск, ул. Тимирязева 65а, офис 430
+				</div>
+				<form>
+					<input type="text" placeholder="Поиск">
+					<button></button>
+				</form>
+				<div class="contacts">
+					<a href="tel:+375298731176">+375 (29) <span>873-11-76</span></a>
+					<a href="mailto:info@houze.by">info@houze.by</a>
+				</div>
+				<div class="links">
+					<a class="a1"></a>
+					<a class="a2"></a>
+					<a class="a3"></a>
+				</div>
+			</div>
+			<div class="mob-contacts">
+				<a href="tel:+375298731176" class="phone">+375 (29) <span>873-11-76</span></a>
+				<div class="hours">
+					с 8:30 до 21:00 ежедневно
+				</div>
+				<div class="social">
+					<a href="#"><img src="tpl/img/social1.svg"></a>
+					<a href="#"><img src="tpl/img/social2.svg"></a>
+				</div>
+			</div>
+		</header>
+		<nav class="top-menu">
+			<div class="container">
+				<ul class="flex">
+					<li><a href="#">Натяжные потолки</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Рассрочка</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Сервисное обслуживание</a></li>
+					<li><a href="#">Освещение</a></li>
+					<li><a href="#">Карнизы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="text">
+				<div class="top-text">
+					ПРОДУКТ ГОДА 2020 ВЫБОР ПОТРЕБИТЕЛЯ
+				</div>
+				<div class="name">
+					НАТЯЖНЫЕ   ПОТОЛКИ
+				</div>
+				<p>ОСТАВЬ ЗАЯВКУ И ПОЛУЧИ КУПОН  НА -50 рублей НА НАТЯЖНОЙ ПОТОЛОК</p>
+				<button>ЗАБРОНИРОВАТЬ</button>
+				<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play">Наш youtube канал:  <span>процесс, качество.</span></a>
+			</div>
+			<div class="flex f">
+				<div></div>
+				<div class="bottom-blocks flex">
+					<div class="item">
+						<img src="tpl/img/image.png">
+						<span>Дарим  3D проект</span>
+						Бесплатная услуга 3D визуализации вашего проекта
+					</div>
+					<div class="item">
+						<img src="tpl/img/image.png">
+						<span>Парящие линии  в подарок</span>
+						Каждый 5-й метр парящей линии идет  в подарок
+					</div>
+					<div class="item">
+						<img src="tpl/img/image.png">
+						<span>Натяжной потолок</span>
+						Установим натяжной потолок со скидкой -30%
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-catalog">
+		<div class="container">
+			<div class="flex">
+				<div class="block-name">
+					<div class="name">
+						<p>Подберите <span>потолок</span></p>
+						 и освещение к нему
+					</div>
+					По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает  у некторых людей недоумение при попытках прочитать рыбу текст.
+				</div>
+				<div class="list">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog1.png"></a>
+						<a href="#" class="name">Глянцевые</a>
+						<nav class="flex">
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>Идеальное решение для быстро монтажа, широкий выбор оттенков, без разводов, царапин, не трескается как гипсокартонные потолки.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog2.png"></a>
+						<a href="#" class="name">Матовые Сатиновые</a>
+						<nav class="flex">
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>На данный момент являются самыми популярными, это обусловлено уникальными качественными характеристиками.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog3.png"></a>
+						<a href="#" class="name">Многоуровневые Эксклюзивные</a>
+						<nav class="flex">
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>Натяжные конструкции представлены сегодня в огромном ассортименте и любых форм. Позволяет сочетать одновременно несколько видов источников освещения, а комбинация разных по цвету и фактуре полотен позволяет получить очень любопытные решения.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog4.png"></a>
+						<a href="#" class="name other">Светильники</a>
+						<nav class="flex">
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>Огромный выбор классических светильников, которые принесут уют в ваш дом.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog5.png"></a>
+						<a href="#" class="name other">Треки, ниши, споты</a>
+						<nav class="flex">
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>Современные функциональные светильники, пользующиеся особой популярностью в наше время.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog6.png"></a>
+						<a href="#" class="name other">Карнизы</a>
+						<nav class="flex">
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 0);">01</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 1);">02</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 2);">03</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 3);">04</a>
+							<a onclick="$('.index-catalog .list').slick('slickGoTo', 4);">05</a>
+							<a class="active" onclick="$('.index-catalog .list').slick('slickGoTo', 5);">06</a>
+						</nav>
+						<p>Потолочный карниз для натяжного потолка давно стал классикой в оформлении интерьеров, а более современным решением будет электрокарниз.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				<div class="top-item">
+					<div><img src="tpl/img/catalog1.png"></div>
+					<div>
+						<div class="number">
+							01
+						</div>
+						<div class="name">
+							Глянцевые
+						</div>
+						<p>Идеальное решение для быстро монтажа, широкий выбор оттенков, без разводов, царапин, не трескается как гипсокартонные потолки.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog2.png"></a>
+						<div class="number">
+							02
+						</div>
+						<a href="#" class="name">Матовые Сатиновые</a>
+						<p>На данный момент являются самыми популярными, это обусловлено уникальными качественными характеристиками.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog3.png"></a>
+						<div class="number">
+							03
+						</div>
+						<a href="#" class="name">Многоуровневые Эксклюзивные</a>
+						<p>Натяжные конструкции представлены сегодня в огромном ассортименте и любых форм. Позволяет сочетать одновременно несколько видов источников освещения, а комбинация разных по цвету и фактуре полотен позволяет получить очень любопытные решения.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog4.png"></a>
+						<div class="number">
+							04
+						</div>
+						<a href="#" class="name other">Светильники</a>
+						<p>Огромный выбор классических светильников, которые принесут уют в ваш дом.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog5.png"></a>
+						<div class="number">
+							05
+						</div>
+						<a href="#" class="name other">Треки, ниши, споты</a>
+						<p>Современные функциональные светильники, пользующиеся особой популярностью в наше время.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<a href="#"><img src="tpl/img/catalog6.png"></a>
+						<div class="number">
+							06
+						</div>
+						<a href="#" class="name other">Карнизы</a>
+						<p>Потолочный карниз для натяжного потолка давно стал классикой в оформлении интерьеров, а более современным решением будет электрокарниз.</p>
+						<a href="#" class="button">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-calc-block">
+		<div class="container">
+			<div class="block-name">
+				Рассчитай <span>стоимость</span> натяжного потолка
+			</div>
+			<div class="top-text">
+				сэкономь 30% своего бюджета
+			</div>
+			<div class="flex">
+				<div class="image">
+					<img src="tpl/img/calc.png">
+				</div>
+				<div class="items">
+					<div class="item">
+						<p>Площадь помещения (м<sup>2</sup>)</p>
+						<div id="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+						<div class="numbers flex">
+							<div class="number">0</div>
+							<div class="number">5</div>
+							<div class="number">10</div>
+							<div class="number">15</div>
+							<div class="number">20</div>
+							<div class="number">25</div>
+							<div class="number">30</div>
+							<div class="number">35</div>
+							<div class="number">40</div>
+							<div class="number">45</div>
+							<div class="number">50</div>
+						</div>
+						<input type="text" id="sl1" class="hid">
+					</div>
+					<div class="item">
+						<input type="checkbox" class="checkbox" id="var1">
+						<label for="var1">Более 50 м<sup>2</sup></label>
+					</div>
+					<div class="item">
+						<p>Количестов светильников</p>
+						<div id="slider2">
+							<div id="custom-handle2" class="ui-slider-handle"></div>
+						</div>
+						<div class="numbers flex">
+							<div class="number">0</div>
+							<div class="number">5</div>
+							<div class="number">10</div>
+							<div class="number">15</div>
+							<div class="number">20</div>
+							<div class="number">25</div>
+							<div class="number">30</div>
+						</div>
+						<input type="text" id="sl2" class="hid">
+					</div>
+					<div class="item">
+						<input type="checkbox" class="checkbox" id="var2">
+						<label for="var2">Более 30 шт</label>
+					</div>
+					<div class="bottom-items">
+						<div class="item">
+							<p>Люстра</p>
+							<input type="checkbox" class="checkbox" id="var3">
+							<label for="var3">&nbsp;</label>
+						</div>
+						<div class="item">
+							<p>Парящие линии</p>
+							<input type="checkbox" class="checkbox" id="var4">
+							<label for="var4">&nbsp;</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="phone-block flex">
+				<div class="name">
+					Куда вам лучше  отправить расчет?
+				</div>
+				<div class="mess">
+					<input type="radio" class="radio" id="mess1" name="mess"><label for="mess1"><img src="tpl/img/mess1.svg"></label>
+					<input type="radio" class="radio" id="mess2" name="mess"><label for="mess2"><img src="tpl/img/mess2.svg"></label>
+					<input type="radio" class="radio" id="mess3" name="mess"><label for="mess3"><img src="tpl/img/mess3.svg"></label>
+					<input type="radio" class="radio" id="mess4" name="mess"><label for="mess4"><img src="tpl/img/mess4.svg"></label>
+				</div>
+				<input type="text" placeholder="Номер телефона">
+				<button>РАССЧИТАТЬ СТОИМОСТЬ</button>
+			</div>
+		</div>
+	</div>
+	<div class="index-advantages">
+		<div class="container">
+			<div class="block-name">
+				Наши <span>преимущества</span>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/advantages1.svg"></div>
+							<div>Мы всегда на месте</div>
+						</div>
+						ООО ”ГутеХауз” - не фирма-однодневка.  Мы присутствуем на рынке 8 лет , отвечаем  по гарантийным обязательствам и всегда готовы вам помочь!
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/advantages2.svg"></div>
+							<div>Длительный срок службы</div>
+						</div>
+						Производители полотен - Германия и Китай. Материалы надежны, срок службы - от 15 лет.
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/advantages3.svg"></div>
+							<div>Гарантия - 2 года</div>
+						</div>
+						В пределах этого срока в условиях договора  мы обслуживаем потолки совершенно бесплатно!
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/advantages4.svg"></div>
+							<div>Скидки, акции, подарки</div>
+						</div>
+						Они у нас постоянные: от 30% всем, также для молодоженов, военных.  А еще бесплатные светильники, ленты, трековые системы. Следите  за новостями! 
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/advantages5.svg"></div>
+							<div>Низкие цены</div>
+						</div>
+						Мы успешно конкурируем на рынке натяжных потолков, так как можем снизить цену за счет опытных сотрудников, которые осуществляют монтаж натяжных потолков в самые минимальные сроки.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-reviews">
+		<div class="container">
+			<div class="block-name">
+				<p>Что о нас <span>говорят.</span></p>
+				 отзывы наших клиентов
+			</div>
+			<div class="list">
+				<div class="item">
+					<div class="text">
+						<div class="txt">
+							<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр.</p>
+							<p>В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям.</p>
+							<p>Все монтажники, а так же замерщики из нашей команды получают сертификаты по завершении курса обучения.</p>
+						</div>
+					</div>
+					<div class="video">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="tpl/img/video.png"></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						<div class="txt">
+							<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр.</p>
+							<p>В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям.</p>
+							<p>Все монтажники, а так же замерщики из нашей команды получают сертификаты по завершении курса обучения.</p>
+						</div>
+					</div>
+					<div class="video">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="tpl/img/video.png"></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						<div class="txt">
+							<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр.</p>
+							<p>В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям.</p>
+							<p>Все монтажники, а так же замерщики из нашей команды получают сертификаты по завершении курса обучения.</p>
+						</div>
+					</div>
+					<div class="video">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="tpl/img/video.png"></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						<div class="txt">
+							<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр.</p>
+							<p>В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям.</p>
+							<p>Все монтажники, а так же замерщики из нашей команды получают сертификаты по завершении курса обучения.</p>
+						</div>
+					</div>
+					<div class="video">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="tpl/img/video.png"></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						<div class="txt">
+							<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр.</p>
+							<p>В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям.</p>
+							<p>Все монтажники, а так же замерщики из нашей команды получают сертификаты по завершении курса обучения.</p>
+						</div>
+					</div>
+					<div class="video">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="tpl/img/video.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="showroom-block">
+		<div class="container">
+			<div class="content">
+				<div class="qr">
+					<img src="tpl/img/qr.png">
+				</div>
+				<div class="name">
+					Приглашаем Вас посетить наш виртуальный шоу-рум <br/>
+					<a href="#">ПЕРЕЙТИ</a>
+				</div>
+				<p>Либо запишитесь на посещение шоу-рума по адресу: Тимирязеквская 65 А, офис 409</p>
+				<form>
+					<input type="text" placeholder="Номер телефона">
+					<button>ЗАПИСАТЬСЯ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="index-credit-block">
+		<div class="container">
+			<div class="block-name">
+				<p>Рассрочка <span>0%</span></p>
+				 до 24 месяцев
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit1.png">
+						Карта Беларусбанка
+						<span>24 месяца</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit2.png">
+						Карта Халва
+						<span>4 месяца</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit3.png">
+						Карта Черепаха
+						<span>10 месяцев</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit4.png">
+						Карта Магнит
+						<span>3 месяца</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit5.png">
+						Карта покупок
+						<span>4 месяца</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/credit6.png">
+						Красная Карта
+						<span>12 месяцев</span>
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item">
+					<img src="tpl/img/credit1.png">
+					Карта Беларусбанка
+					<span>24 месяца</span>
+				</div>
+				<div class="item">
+					<img src="tpl/img/credit2.png">
+					Карта Халва
+					<span>4 месяца</span>
+				</div>
+				<div class="item">
+					<img src="tpl/img/credit3.png">
+					Карта Черепаха
+					<span>10 месяцев</span>
+				</div>
+				<div class="item">
+					<img src="tpl/img/credit4.png">
+					Карта Магнит
+					<span>3 месяца</span>
+				</div>
+				<div class="item">
+					<img src="tpl/img/credit5.png">
+					Карта покупок
+					<span>4 месяца</span>
+				</div>
+				<div class="item">
+					<img src="tpl/img/credit6.png">
+					Красная Карта
+					<span>12 месяцев</span>
+				</div>
+			</div>
+			<form>
+				<div class="name">
+					Оставь заявку и получи <span>VIP-условия</span>  для первого платежа!
+				</div>
+				<div class="flex">
+					<div class="item">
+						Без спарвки о доходах, банков  и поручителей
+					</div>
+					<div class="line"></div>
+					<div class="item">
+						Без скрытых процентов  и переплат
+					</div>
+					<div class="line"></div>
+					<div class="item">
+						Просто в оформлении,  нужен только паспорт
+					</div>
+				</div>
+				<div class="flex">
+					<input type="text" placeholder="Номер телефона">
+					<button>ЗАБРОНИРОВАТЬ VIP-УСЛОВИЯ</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="index-steps-block">
+		<div class="container">
+			<div class="block-name">
+				<p>Экологически чистый <span>натяжной потолок</span></p>
+				 всего за 1 день
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/step1.png">
+						<div class="number">01</div>
+						<p><a href="#">Звоните</a> или оставляйте <a href="#">заявку</a></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/step2.png">
+						<div class="number">02</div>
+						<p>Инженер снимает замеры  и <span>заключает официальный договор</span></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/step3.png">
+						<div class="number">03</div>
+						<p><span>Профессиональная монтажная группа</span> устанавливает потолок</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item">
+						<img src="tpl/img/step4.png">
+						<div class="number">04</div>
+						<p>Вы получаете <span>15 лет гарантии и 2 года сервисного обслуживания</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="index-offers flex">
+			<div class="block-name">
+				СУПЕР <span>ПРЕДЛОЖЕНИЯ</span>
+			</div>
+			<div class="flex">
+				<div class="item">
+					<img src="tpl/img/offer11.png">
+					<div class="link">
+						<a href="#">
+							<span>В ПОДАРОК!</span>
+							Подстветка карниза
+						</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="tpl/img/offer12.png">
+					<div class="link">
+						<a href="#">
+							<span>В ПОДАРОК!</span>
+							Метр парящей линии
+						</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="tpl/img/offer13.png">
+					<div class="link">
+						<a href="#">
+							<span>БЕСПЛАТНО!</span>
+							10 светильников Feron
+						</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="tpl/img/offer14.png">
+					<div class="link">
+						<a href="#">
+							<span>ПУЛЬТ В ПОДАРОК!</span>
+							К светильникам и люстре
+						</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="tpl/img/offer15.png">
+					<div class="link">
+						<a href="#">
+							<span>В ПОДАРОК!</span>
+							Метр трековой системы
+						</a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="tpl/img/offer16.png">
+					<div class="link">
+						<a href="#">
+							<span>В VR ОЧКАХ</span>
+							Выбери дизайн потолка
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="index-docs-block">
+			<div class="block-name">
+				Сертификаты
+			</div>
+			<div class="flex">
+				<div class="boss">
+					<img src="tpl/img/boss.png">
+					<div class="text">
+						Директор компании <span>ООО «ГутеХауз Про»</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="item"><a href="tpl/img/doc.png" data-fancybox="gallery21"><img src="tpl/img/doc.png"></a></div>
+					<div class="item"><a href="tpl/img/doc.png" data-fancybox="gallery21"><img src="tpl/img/doc.png"></a></div>
+					<div class="item"><a href="tpl/img/doc.png" data-fancybox="gallery21"><img src="tpl/img/doc.png"></a></div>
+					<div class="item"><a href="tpl/img/doc.png" data-fancybox="gallery21"><img src="tpl/img/doc.png"></a></div>
+					<div class="item"><a href="tpl/img/doc.png" data-fancybox="gallery21"><img src="tpl/img/doc.png"></a></div>
+				</div>
+			</div>
+			<div class="bottom-text">
+				Экологически чистые и безопасные для здоровья материалы (техническое свидетельство от 08.0129.15 ГОСТ Р 53298-2009)
+			</div>
+		</div>
+	</div>
+	<div class="index-development-block">
+		<div class="container">
+			<div class="block-name">
+				Собственное <span>производство</span>
+			</div>
+			<img src="tpl/img/development.png">
+			<div class="list">
+				<div class="item"><img src="tpl/img/development2.png"></div>
+				<div class="item"><img src="tpl/img/development2.png"></div>
+				<div class="item"><img src="tpl/img/development2.png"></div>
+			</div>
+		</div>
+	</div>
+	<div class="index-scheme-block">
+		<div class="container">
+			<div class="block-name">
+				<span>Прочный, экологичный и практичный </span>
+				потолок от GuteHouze
+			</div>
+		</div>
+		<div class="image">
+			<img src="tpl/img/scheme.png">
+			<div class="item">
+				<div class="name">
+					Натяжной потолок
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Оригинальные комплектующие
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Легко мыть
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Профиль
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Электрика
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Карниз для штор
+				</div>
+				<div class="text">
+					Текст текст текст текст текст
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					Аккуратная установка
+				</div>
+				<div class="text">
+					Если вы уже поклеили обои  и поставили мебель – это не беда, мы выполним установку потолков в завершенном дизайне. Ваши обои и мебель останутся чистыми.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-team-block">
+		<div class="container flex">
+			<div class="text">
+				<div class="name">
+					<span>Лучшая команда.</span>
+					 Нам можно доверять!
+				</div>
+				<div class="txt">
+					<p>Современные технологии натяжных потолков требуют высокого качества работы. Поэтому у нас есть свой учебный центр. В учебном центре проходят обучения и сдаются тесты, выполняют практические задания по монтажу и сопутствующей работе, связанной с потолками по современным технологиям. Все монтажники, а так же замерщики из нашей команды получают сертификаты  по завершении курса обучения.</p>
+					<a href="#" class="play">Посмотрите короткое видео <br/>как работают наши мастера</a>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item">
+					<div class="name">
+						<div><img src="tpl/img/team1.svg"></div>
+						<div>Обучение сотрудников</div>
+					</div>
+					Каждый монтажник в нашей компании, обучается в учебном центре и сдает тест  по теоретической и практической части. После этого он выходит на стажировку в опытную бригаду. В бригаде новичок 3 месяца работает под присмотром опытного наставника.
+				</div>
+				<div class="item">
+					<div class="name">
+						<div><img src="tpl/img/team2.svg"></div>
+						<div>Тесты новинок</div>
+					</div>
+					Мы не экспериментируем у вас дома. Все новые системы, которые появляются на рынке наши  монтажники сначала отрабатывают  в учебном центре и только потом мы начинаем их предлагать нашим клиентам.
+				</div>
+				<div class="item">
+					<div class="name">
+						<div><img src="tpl/img/team3.svg"></div>
+						<div>Шоурум в Минске</div>
+					</div>
+					Только у нас вы можете посмотреть все современные решения по натяжным потолкам  в живую.
+				</div>
+			</div>
+			<div class="bottom-block">
+				<img src="tpl/img/team.png">
+				<ol>
+					<li><span>лет минимальный опыт работы в строительстве</span></li>
+					<li><span>месяца обучения по технологии и стажировка</span></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="index-services-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="block-name">
+						<div class="name">
+							Сервис и <span>надежность</span>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service1.svg"></div>
+							<div>Установка</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service2.svg"></div>
+							<div>Стоимость</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service3.svg"></div>
+							<div>Многоуровневость</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service4.svg"></div>
+							<div>Объекты</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service5.svg"></div>
+							<div>Уборка</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service6.svg"></div>
+							<div>Эскиз потолка</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="item">
+						<div class="name">
+							<div><img src="tpl/img/service7.svg"></div>
+							<div>Монтаж</div>
+						</div>
+						<p>По своей сути рыбатекст является альтернативой  lorem ipsum, который  помогает прочитать рыбу текст.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-calc-block2">
+		<div class="container">
+			<div class="block-name">
+				<p>Рассчитай <span>стоимость</span></p>
+				натяжного потолка
+			</div>
+			<div class="top-text">
+				Рассчитайте ориентировочную стоимость наших натяжных потолков.
+			</div>
+			<input type="text" placeholder="площадь м2" class="size">
+			<div class="phone-block flex">
+				<div class="name">
+					Куда вам лучше  отправить расчет?
+				</div>
+				<div class="mess">
+					<input type="radio" class="radio" id="mess5" name="mess2"><label for="mess5"><img src="tpl/img/mess1.svg"></label>
+					<input type="radio" class="radio" id="mess6" name="mess2"><label for="mess6"><img src="tpl/img/mess2.svg"></label>
+					<input type="radio" class="radio" id="mess7" name="mess2"><label for="mess7"><img src="tpl/img/mess3.svg"></label>
+					<input type="radio" class="radio" id="mess8" name="mess2"><label for="mess8"><img src="tpl/img/mess4.svg"></label>
+				</div>
+				<input type="text" placeholder="Номер телефона">
+				<button>РАССЧИТАТЬ СТОИМОСТЬ</button>
+			</div>
+		</div>
+	</div>
+	<div class="index-reviews-block2">
+		<div class="container">
+			<div class="block-name">
+				Отзывы клиентов
+			</div>
+			<div class="list">
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Хочу сказать спасибо за хорошую и оперативную работу. Объем работ, правда, у меня был небольшой (потолки в санузле). Замеры сделали быстро. Все, с кем довелось пообщаться, культурные, интеллигентные люди. Буду обращаться еще, однозначно!</p>
+				</div>
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Остались очень довольны услугами данной компании. Начиная с администраторов с которыми можно общаться посредством соц сетей, что было удобно для меня. Разумеется и по телефону администраторы очень обаятельные и компетентные. Замерщик понравился сразу, все быстро, по делу, давал только уместные советы, помог даже определится в выборе. Монтаж осуществляли тоже хорошие, культурные, тактичные ребята, которые оставили только приятное впечатление о себе.</p>
+				</div>
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Хочу сказать спасибо за хорошую и оперативную работу. Объем работ, правда, у меня был небольшой (потолки в санузле). Замеры сделали быстро. Все, с кем довелось пообщаться, культурные, интеллигентные люди. Буду обращаться еще, однозначно!</p>
+				</div>
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Остались очень довольны услугами данной компании. Начиная с администраторов с которыми можно общаться посредством соц сетей, что было удобно для меня. Разумеется и по телефону администраторы очень обаятельные и компетентные. Замерщик понравился сразу, все быстро, по делу, давал только уместные советы, помог даже определится в выборе. Монтаж осуществляли тоже хорошие, культурные, тактичные ребята, которые оставили только приятное впечатление о себе.</p>
+				</div>
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Хочу сказать спасибо за хорошую и оперативную работу. Объем работ, правда, у меня был небольшой (потолки в санузле). Замеры сделали быстро. Все, с кем довелось пообщаться, культурные, интеллигентные люди. Буду обращаться еще, однозначно!</p>
+				</div>
+				<div class="item">
+					<div class="author">
+						<div><img src="tpl/img/avatar.png"></div>
+						<div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							Паша Радзевич
+						</div>
+					</div>
+					<p>Остались очень довольны услугами данной компании. Начиная с администраторов с которыми можно общаться посредством соц сетей, что было удобно для меня. Разумеется и по телефону администраторы очень обаятельные и компетентные. Замерщик понравился сразу, все быстро, по делу, давал только уместные советы, помог даже определится в выборе. Монтаж осуществляли тоже хорошие, культурные, тактичные ребята, которые оставили только приятное впечатление о себе.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-map-block">
+		<div class="container">
+			<div class="block-name">
+				Как нас <span>найти</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A00dcbd0624b49a789e34c8a696c29ffe01e3ef46cb486a806d0971ae5ec9cec0&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="container flex">
+				<div></div>
+				<div class="link">
+					<a>Как к нам дойти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-faq-block">
+		<div class="container flex">
+			<div class="name">
+				ОСТАЛИСЬ ВОПРОСЫ?
+			</div>
+			<p>Оставьте заявку и наш специалист ответит на все вопросы!</p>
+			<a href="#">ЗАДАТЬ ВОПРОС</a>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container flex">
+			<div class="logo">
+				<a href="/"><img src="tpl/img/logo.png"></a>
+				<a href="tel:+375298731176" class="phone">+375 (29) 873-11-76</a>
+				<a href="mailto:info@houze.by" class="mail">info@houze.by</a>
+				<div class="adress">
+					г. Минск, ул. Тимирязева 65а, <br/>
+					офис 430 <br/>
+					ПН-ВС 8:30 - 21:00  <br/>
+					Без выходных
+				</div>
+				<div class="social">
+					<a href="#"><img src="tpl/img/social1.svg"></a>
+					<a href="#"><img src="tpl/img/social2.svg"></a>
+				</div>
+			</div>
+			<nav>
+				<p>Клиентам</p>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Наша команда</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<p>Стоимость</p>
+				<ul>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Рассрочка</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Дисконтная  программа</a></li>
+					<li><a href="#">Калькулятор</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<p>Потолки</p>
+				<ul>
+					<li><a href="#">Натяжные потолки</a></li>
+					<li><a href="#">Освещение</a></li>
+					<li><a href="#">Карнизы</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Сервисное  обслуживание</a></li>
+					<li><a href="#">Конструктор</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<p>Оплата</p>
+				<ul>
+					<li><a href="#">Наличные</a></li>
+					<li><a href="#">Карточками</a></li>
+					<li><a href="#">Оплата  через ЕРИП</a></li>
+				</ul>
+			</nav>
+			<div class="site-map">
+				<button>ЗАКАЗАТЬ ЗВОНОК</button>
+				<div class="ya">
+					<img src="tpl/img/ya.png">
+				</div>
+				<a href="#">Карта сайта</a>
+			</div>
+		</div>
+	</footer>
+	<div class="bottom-page-line">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="copy">
+						© GuteHouze Натяжные потолки в Минске
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="link">
+						<a href="#">Правовая информация</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dev">
+						<a href="#">Разарботка сайта</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup form">
+		<div class="window small">
+			<a class="close"></a>
+			<form class="popup-form">
+				<div class="name">
+					Закажи бесплатный  выезд мастера на замер
+				</div>
+				<div class="fields">
+					<input type="text" placeholder="Телефон">
+					<div class="agree">
+						<input type="checkbox" id="agree">
+						<label for="agree">
+							Ознакомился и принимаю условия  <a href="#">Политики конфиденциальности</a>
+						</label>
+					</div>
+					<button>ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
