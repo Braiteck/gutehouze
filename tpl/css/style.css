@@ -1680,7 +1680,7 @@ main {
   margin-top: 20px;
   position: relative;
 }
-.index-docs-block .list:after {
+/*.index-docs-block .list:after {
   content: "";
   position: absolute;
   width: 33%;
@@ -1688,10 +1688,36 @@ main {
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.7);
+}*/
+.index-docs-block .list .item{
+  opacity: 0.4;
+}
+.index-docs-block .list .item.slick-current{
+  opacity: 1;
 }
 .index-docs-block .list .item.slick-current img {
   transform: none;
 }
+
+.index-docs-block .list .item{
+  position: relative;
+}
+
+.index-docs-block .list .item .bottom-text {
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    left: 100%;
+    bottom: -5px;
+    display: none;
+    margin-left: 43px;
+    width: 428px;
+}
+
+.index-docs-block .list .item.slick-current .bottom-text{
+  display: block;
+}
+
 .index-docs-block .list .item img {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -5356,6 +5382,14 @@ h1 {
   .reviews-form-page .block-name {
     padding: 0;
   }
+  .index-docs-block .list .item{
+    padding-bottom: 32px;
+  }
+  .index-docs-block .list .item .bottom-text {
+    bottom:0;
+    margin-left: 38px;
+    width: 396px;
+  }
 }
 @media (max-width: 991px) {
   .index-credit-block form {
@@ -5474,6 +5508,9 @@ h1 {
   }
   .index-docs-block .list {
     width: 100%;
+  }
+  .index-docs-block .list .item .bottom-text{
+    width: 422px;
   }
   .index-docs-block .bottom-text {
     padding: 0 0 0 40%;
@@ -5913,6 +5950,14 @@ h1 {
   .reviews-form-page .upload a:first-child {
     display: inline-block;
   }
+  .index-docs-block .list .item {
+    padding-bottom: 68px;
+  }
+  .index-docs-block .list .item .bottom-text {
+    width: 276px;
+    text-align: left;
+    margin-left: 24px;
+ }
 }
 @media (max-width: 575px) {
   .header .logo {
@@ -6153,10 +6198,19 @@ h1 {
   }
   .index-docs-block .list .item {
     text-align: center;
+    padding-bottom: 0;
   }
   .index-docs-block .list .item img {
     display: inline-block;
   }
+  .index-docs-block .list .item .bottom-text {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px;
+    left: 0;
+ }
   .index-docs-block .bottom-text {
     margin-top: 0;
     padding: 30px 0 0 0;
